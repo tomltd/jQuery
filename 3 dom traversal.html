@@ -4,6 +4,7 @@
        
 <style>
 .container { color: green;}
+.cat { color: purple;}
 
 </style>
 
@@ -41,6 +42,9 @@
 //			.prev().text('Tom');
 
 //	$('li').closest('div.container').removeClass('container');
+
+		$('ul').children('li').eq(2).addClass('cat');
+		$('li').children('ul').addClass('cat');
 
 	console.log($('ul').parents('.container'));
 	console.log($('ul').closest('.container'));
