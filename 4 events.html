@@ -19,7 +19,7 @@
 
 (function() {
   $('button').click(function(){
-    var stylesheet = $(this).attr('data-file');
+    var stylesheet = $(this).data('file');
     $('link').attr('href', stylesheet + '.css');
 
   });
