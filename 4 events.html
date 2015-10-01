@@ -18,9 +18,15 @@
 <script>
 
 (function() {
+    var link = $('link');
   $('button').click(function(){
-    var stylesheet = $(this).data('file');
-    $('link').attr('href', stylesheet + '.css');
+    var $this = $(this);
+    var stylesheet = $this.data('file');
+
+    $(this).siblings('button').removeAttr('disabled');
+
+    link.attr('href', stylesheet + '.css');
+    $this.attr('disabled', 'disabled');
 
   });
 })();
