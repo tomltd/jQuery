@@ -10,8 +10,8 @@
 
 <h1>My Fantastic Website</h1>
 
-<button>Day</button>
-<button>Night</button>
+<button data-file="day">Day</button>
+<button data-file="night">Night</button>
 
 
 
@@ -19,7 +19,7 @@
 
 (function() {
   $('button').click(function(){
-    var stylesheet = $(this).text().toLowerCase();
+    var stylesheet = $(this).attr('data-file');
     $('link').attr('href', stylesheet + '.css');
 
   });
