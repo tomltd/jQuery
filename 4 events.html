@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>JQuery</title>
+<link rel="stylesheet" href="day.css">
+</head>
+
+
+<body>
+ <script src="jquery-1.11.3.js"></script>
+
+<h1>My Fantastic Website</h1>
+
+<button>Day</button>
+<button>Night</button>
+
+
+
+<script>
+
+(function() {
+  $('button').click(function(){
+    var stylesheet = $(this).text().toLowerCase();
+    $('link').attr('href', stylesheet + '.css');
+
+  });
+})();
+
+
+
+</script>
+
+
+
+</body>
+
+
+</body>
+</html>
