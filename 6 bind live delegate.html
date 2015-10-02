@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>JQuery</title>
+</head>
+<body>
+         
+        <h2>Click me</h2>
+        <h2>Click me</h2>
+        <h2>Click me</h2>
+        <h2>Click me</h2>
+ 
+
+<script src="jquery-1.11.3.js"></script>
+
+
+<script>
+(function() {
+		$('h2').on('click', function() {
+			console.log('clicked');
+			$(this).clone().appendTo('body');
+			
+
+		});
+
+
+})();
+</script>
+</body>
+</html>
